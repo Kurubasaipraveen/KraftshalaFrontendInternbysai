@@ -1,0 +1,123 @@
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.weather-panel {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Light mode styles */
+.light {
+  background: white;
+  color: black;
+}
+
+.light .weather-info {
+  border: 2px solid black;
+  color: rgb(19, 17, 17);
+  
+}
+
+.light .weather-info .weather {
+  background: white;
+  color: black;
+}
+
+/* Dark mode styles */
+.dark {
+  background: #333;
+  color: white;
+}
+
+.dark .weather-info {
+  background: #444;
+  color: white;
+  border: 2px solid#ffffff;
+}
+
+.dark .weather-info .weather {
+  background: #444;
+  color: white;
+}
+
+.toggle-button {
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark .toggle-button {
+  background: #555;
+  color: white;
+  border: 1px solid #888;
+}
+
+/* Search form styles */
+.search {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.search input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #b9e1f1;
+  margin-right: 10px;
+  background: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.search button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background: rgb(74, 38, 236);
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark .search input {
+  background: #555;
+  color: rgb(247, 242, 242);
+  border: 1px solid #6295c4;
+}
+
+.dark .search button {
+  background: #672cd4;
+  color: white;
+  border: 1px solid #e486aa;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .weather-info {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .search {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search input, .search button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
