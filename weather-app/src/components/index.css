@@ -18,8 +18,9 @@ body {
 }
 
 .light .weather-info {
-  border: 2px solid black;
+  
   color: rgb(19, 17, 17);
+  
   
 }
 
@@ -37,7 +38,7 @@ body {
 .dark .weather-info {
   background: #444;
   color: white;
-  border: 2px solid#ffffff;
+ 
 }
 
 .dark .weather-info .weather {
